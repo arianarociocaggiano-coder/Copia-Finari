@@ -1,0 +1,201 @@
+.admin-header {
+    text-align: center;
+    padding: 2rem 1rem 0;
+}
+
+.admin-header h2 {
+    display: inline-block;
+    background: var(--color-primary);
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 50px;
+    margin-bottom: 0.5rem;
+    font-size: var(--font-size-2xl);
+}
+
+.admin-header p {
+    color: var(--color-text-light);
+}
+
+.admin-section {
+    padding: 2rem 1rem 3rem;
+}
+
+.admin-section h3 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: var(--font-size-xl);
+}
+
+.table-responsive {
+    overflow-x: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--font-size-sm);
+    background: white;
+}
+
+.admin-table thead {
+    background: var(--color-primary);
+    color: white;
+}
+
+.admin-table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.admin-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    vertical-align: middle;
+}
+
+.admin-table tbody tr:hover {
+    background: var(--color-background-alt);
+}
+
+.admin-table .product-thumb {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+}
+
+.btn-edit {
+    background: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-right: 0.25rem;
+}
+
+.btn-edit:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+.btn-delete {
+    background: transparent;
+    color: #dc2626;
+    border: 1px solid #dc2626;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-delete:hover {
+    background: #dc2626;
+    color: white;
+}
+
+.admin-form {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-grid .full-width {
+    grid-column: 1 / -1;
+}
+
+.admin-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-form .form-group label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-light);
+    margin-bottom: 0.3rem;
+}
+
+.admin-form .form-group input,
+.admin-form .form-group select,
+.admin-form .form-group textarea {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.5rem 0.75rem;
+    font-family: var(--font-primary);
+    outline: none;
+    transition: var(--transition);
+}
+
+.admin-form .form-group input:focus,
+.admin-form .form-group select:focus,
+.admin-form .form-group textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 0.3rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    accent-color: var(--color-primary);
+}
+
+.admin-form .btn-submit {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 0.7rem 2.5rem;
+    border-radius: 50px;
+    font-size: var(--font-size-base);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 1rem;
+}
+
+.admin-form .btn-submit:hover {
+    background: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-form {
+        padding: 1.5rem;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 0.5rem 0.75rem;
+        font-size: var(--font-size-sm);
+    }
+}
